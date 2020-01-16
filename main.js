@@ -7,7 +7,6 @@ $("div.burger").on("click", function() {
   $span1.toggleClass("move");
   const $span3 = $("div.burger span:nth-of-type(3)");
   $span3.toggleClass("move");
-
   const $span2 = $("div.burger>span:nth-of-type(2)");
   $span2.toggleClass("dissappear");
 
@@ -22,7 +21,7 @@ $(window).on("scroll", function() {
   const $header = $("header");
   const headerHeight = $header.outerHeight();
 
-  /* Zmiana koloru burgera */
+  // change burger color
   if ($("div.theme").hasClass("active")) {
     if (scrollValue > headerHeight) {
       $burger.css("background-color", "white");
@@ -37,7 +36,7 @@ $(window).on("scroll", function() {
     }
   }
 
-  /*Pojawienie się sekcji 1 */
+  /* Section 1 show */
   const $section1 = $("section.intro");
 
   if (scrollValue > headerHeight / 2) {
@@ -75,12 +74,12 @@ $(window).on("scroll", function() {
 
   const dests = [$destination1, $destination2, $destination3, $destination4];
 
-  /* Animowana sekcja - ukazujące się bloki */
+  /* Animated section */
   if (scrollValue > DestinationFromTop + DestinationHeight - windowHeight / 3) {
     for (i = 0; i < dests.length; i++) {
       dests[i].addClass("active");
     }
-    /*Reset animacji */
+    /*Reset animation */
   } else if (scrollValue < 100) {
     for (i = 0; i < dests.length; i++) {
       dests[i].removeClass("active");
