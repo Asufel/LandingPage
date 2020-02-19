@@ -1,259 +1,350 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aloha Tours</title>
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i&amp;subset=latin-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title> Lesko Tours</title>
-
-</head>
-
-<body>
-
-    <header>
-        <img src="venice.jpg" alt="">
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li><a class="About" href="#"> About </a></li>
-                <li><a class="Tours" href="#"> Tours </a></li>
-                <li><a class="News" href="#"> News</a></li>
-                <li><a class="FAQ" href="#"> FAQ </a></li>
-                <li><a class="Contact" href="#"> Contact </a></li>
-            </ul>
-
-        </nav>
-        <h1 class="intro_h1"> Experiance the best <br> journey in your life</h1>
-        <button class="intro_button"> Get more</button>
-        <div class="dots">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="arrowUp"><i class="fas fa-chevron-up"></i></div>
-        <div class="theme"><i class="fas fa-brush"></i></div>
+  <body>
+    <header class="header">
+      <img class="header__img" src="venice.jpg" alt="" />
+      <div class="header__burger">
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+      </div>
+      <nav class="header__navigation">
+        <ul class="navigation__list">
+          <li class="list__item">
+            <a class="item__link About" href="#"> About </a>
+          </li>
+          <li class="list__item">
+            <a class="item__link Tours" href="#"> Tours </a>
+          </li>
+          <li class="list__item">
+            <a class="item__link News" href="#"> News</a>
+          </li>
+          <li class="list__item">
+            <a class="item__link FAQ" href="#"> FAQ </a>
+          </li>
+          <li class="list__item">
+            <a class="item__link Contact" href="#"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__intro">
+        Experiance the best <br />
+        journey in your life
+      </h1>
+      <button class="header__button">Get more</button>
+      <div class="header__dots">
+        <span class="dots__span active"></span>
+        <span class="dots__span"></span>
+        <span class="dots__span"></span>
+        <span class="dots__span"></span>
+        <span class="dots__span"></span>
+      </div>
+      <div class="header__arrowUp"><i class="fas fa-chevron-up"></i></div>
+      <div class="header__theme"><i class="fas fa-brush"></i></div>
     </header>
 
-
-
     <section class="intro" id="About">
-
-        <div class="intro_article clearfix">
-            <img class="intro_foto" src="ship.jpg" alt="statek na wodzie">
-            <h2 class="intro_h2"> <em>About us</em> </h2>
-            <p class="intro_p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna vel mauris
-                rhoncus pellentesque
-                iaculis cursus ipsum. Nunc volutpat, ante et semper ultrices, risus risus vulputate ante, eget mattis
-                libero ante vel ante.
-                Ut ut magna non est imperdiet varius. Suspendisse euismod, ligula et porttitor accumsan, erat sem
-                tincidunt nulla, eget rut
-                rum neque dolor vitae lectus. Pellentesque maximus egestas dapibus. Donec nec turpis aliquam, volutpat
-                lacus a, luctus eros.
-                In placerat at lectus a mattis. Morbi diam arcu, molestie at condimentum non, placerat at ligula. Aenean
-                mattis dictum ultri
-                cies. <strong> Maecenas nec commodo ipsum, id consequat nisi. Aliquam vestibulum lectus vitae eleifend
-                    sagittis.</strong>
-                Nulla sem diam, rhoncu
-                s ut accumsan sit amet, eleifend a eros.Proin posuere tellus non dolor convallis, nec
-                placerat leo
-                convallis. Suspendisse pot
-                enti. Mauris at lacinia sapien, ac auctor erat. Curabitur justo nisl, lobortis ac bibendum in,<strong>
-                    sodales
-                    quis ligula.</strong>
-            </p>
-
-
-        </div>
-
+      <div class="intro__article clearfix">
+        <img class="article__foto" src="ship.jpg" alt="statek na wodzie" />
+        <h2 class="article__h2"><em>About us</em></h2>
+        <p class="article__p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          urna vel mauris rhoncus pellentesque iaculis cursus ipsum. Nunc
+          volutpat, ante et semper ultrices, risus risus vulputate ante, eget
+          mattis libero ante vel ante. Ut ut magna non est imperdiet varius.
+          Suspendisse euismod, ligula et porttitor accumsan, erat sem tincidunt
+          nulla, eget rut rum neque dolor vitae lectus. Pellentesque maximus
+          egestas dapibus. Donec nec turpis aliquam, volutpat lacus a, luctus
+          eros. In placerat at lectus a mattis. Morbi diam arcu, molestie at
+          condimentum non, placerat at ligula. Aenean mattis dictum ultri cies.
+          <strong>
+            Maecenas nec commodo ipsum, id consequat nisi. Aliquam vestibulum
+            lectus vitae eleifend sagittis.</strong
+          >
+          Nulla sem diam, rhoncu s ut accumsan sit amet, eleifend a eros.Proin
+          posuere tellus non dolor convallis, nec placerat leo convallis.
+          Suspendisse pot enti. Mauris at lacinia sapien, ac auctor erat.
+          Curabitur justo nisl, lobortis ac bibendum in,<strong>
+            sodales quis ligula.</strong
+          >
+        </p>
+      </div>
     </section>
 
     <section class="destinations">
-        <h1 class="destinations_h1" id="Tours">Our tours</h1>
+      <h1 class="destinations__h1" id="Tours">Our tours</h1>
 
-        <div class="destination">
-            <div class="tour_pic"></div>
-            <h4> Cuba </h4>
-            <p>City</p>
-        </div>
+      <div class="destinations__destination">
+        <div class="destination__pic"></div>
+        <h4>Cuba</h4>
+        <p>City</p>
+      </div>
 
-        <div class="destination">
-            <div class="tour_pic"></div>
-            <h4> Norway</h4>
-            <p>City</p>
-        </div>
+      <div class="destinations__destination">
+        <div class="destination__pic"></div>
+        <h4>Norway</h4>
+        <p>City</p>
+      </div>
 
-        <div class="destination">
-            <div class="tour_pic"></div>
-            <h4> USA</h4>
-            <p>City</p>
-        </div>
+      <div class="destinations__destination">
+        <div class="destination__pic"></div>
+        <h4>USA</h4>
+        <p>City</p>
+      </div>
 
-        <div class="destination">
-            <div class="tour_pic"></div>
-            <h4> India </h4>
-            <p>City</p>
-        </div>
+      <div class="destinations__destination">
+        <div class="destination__pic"></div>
+        <h4>India</h4>
+        <p>City</p>
+      </div>
     </section>
 
     <section class="details">
-        <h1 class="details_h1"> Travel with us</h1>
-        <div class="offer_intro">
-            <div class="offer_intro_pic"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna vel mauris rhoncus pellentesque
-                iaculis cursus ipsum. Nunc volutpat,
-                ante et semper ultrices, risus risus vulputate ante, eget mattis libero ante vel ante. Ut ut magna non
-                est imperdiet varius. </p>
-        </div>
-        <div class="offer"><i class="fas fa-cocktail"></i>
-            <p class="offer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna vel
-                mauris rhoncus pellentesque iaculis cursus ipsum. Nunc volutpat,
-                ante et semper ultrices, risus risus vulputate ante, eget mattis libero ante vel ante. Ut ut magna non
-                est imperdiet varius. </p>
-        </div>
-        <div class="offer"><i class="far fa-sun"></i>
-            <p class="offer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna vel
-                mauris rhoncus pellentesque iaculis cursus ipsum. Nunc volutpat,
-                ante et semper ultrices, risus risus vulputate ante, eget mattis libero ante vel ante. Ut ut magna non
-                est imperdiet varius. </p>
-        </div>
-        <div class="offer"><i class="fas fa-ship"></i>
-            <p class="offer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis urna vel
-                mauris rhoncus pellentesque iaculis cursus ipsum. Nunc volutpat,
-                ante et semper ultrices, risus risus vulputate ante, eget mattis libero ante vel ante. Ut ut magna non
-                est imperdiet varius. </p>
-        </div>
-
+      <h1 class="details__h1">Travel with us</h1>
+      <div class="details__intro">
+        <div class="intro__pic"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          urna vel mauris rhoncus pellentesque iaculis cursus ipsum. Nunc
+          volutpat, ante et semper ultrices, risus risus vulputate ante, eget
+          mattis libero ante vel ante. Ut ut magna non est imperdiet varius.
+        </p>
+      </div>
+      <div class="details__offer">
+        <i class="fas fa-cocktail"></i>
+        <p class="offer_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          urna vel mauris rhoncus pellentesque iaculis cursus ipsum. Nunc
+          volutpat, ante et semper ultrices, risus risus vulputate ante, eget
+          mattis libero ante vel ante. Ut ut magna non est imperdiet varius.
+        </p>
+      </div>
+      <div class="details__offer">
+        <i class="far fa-sun"></i>
+        <p class="offer_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          urna vel mauris rhoncus pellentesque iaculis cursus ipsum. Nunc
+          volutpat, ante et semper ultrices, risus risus vulputate ante, eget
+          mattis libero ante vel ante. Ut ut magna non est imperdiet varius.
+        </p>
+      </div>
+      <div class="details__offer">
+        <i class="fas fa-ship"></i>
+        <p class="offer_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          urna vel mauris rhoncus pellentesque iaculis cursus ipsum. Nunc
+          volutpat, ante et semper ultrices, risus risus vulputate ante, eget
+          mattis libero ante vel ante. Ut ut magna non est imperdiet varius.
+        </p>
+      </div>
     </section>
 
     <section class="location">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190035.070529193!2d12.368447728102444!3d41.90794194190941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2zUnp5bSwgV8WCb2NoeQ!5e0!3m2!1spl!2spl!4v1555443601107!5m2!1spl!2spl"
-            width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="socials" id="Contact">
-            <ul>
-                <li> <a href="#" class="social"><i class="fas fa-phone-volume social-icon"></i>+1 33 91703177</a></li>
-                <li>
-                    <a href="mailto: PlanetTours@yahoo.com" class="social"><i class="far fa-envelope social-icon"></i>PlanetTours@yahoo.com</a>
-                </li>
-                <li><a href="#" class="social"><i class="fab fa-facebook-square social-icon"></i> Follow us on Facebook</a>
-                </li>
-                <li><a href="#" class="social"><i class="fab fa-twitter-square social-icon"></i> Follow us on Twitter</a>
-                </li>
-            </ul>
-        </div>
-        <div class="contact">
-            <form action="" class="form">
-                <label class="form_label" for="Newsletter"> Subscribe us and get a free newsletter!</label>
-                <input class="form_input" type="email" placeholder=" Your email...">
-                <button class="form_button"> Get the Newsletter</button>
-            </form>
-        </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190035.070529193!2d12.368447728102444!3d41.90794194190941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2zUnp5bSwgV8WCb2NoeQ!5e0!3m2!1spl!2spl!4v1555443601107!5m2!1spl!2spl"
+        width="800"
+        height="400"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+      <div class="location__socials" id="Contact">
+        <ul class="socials__list">
+          <li class="list__obj">
+            <a href="#" class="obj__social"
+              ><i class="fas fa-phone-volume social-icon"></i>+1 33 91703177</a
+            >
+          </li>
+          <li class="list__obj">
+            <a href="mailto: PlanetTours@yahoo.com" class="obj__social"
+              ><i class="far fa-envelope social-icon"></i
+              >PlanetTours@yahoo.com</a
+            >
+          </li>
+          <li class="list__obj">
+            <a href="#" class="obj__social"
+              ><i class="fab fa-facebook-square social-icon"></i> Follow us on
+              Facebook</a
+            >
+          </li>
+          <li class="list__obj">
+            <a href="#" class="obj__social"
+              ><i class="fab fa-twitter-square social-icon"></i> Follow us on
+              Twitter</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="location__contact">
+        <form action="" class="contact__form">
+          <label class="form__label" for="Newsletter">
+            Subscribe us and get a free newsletter!</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            placeholder="  Your email..."
+          />
+          <button class="form__button">Get the Newsletter</button>
+        </form>
+      </div>
     </section>
 
     <section class="faq">
-        <h1 class="faq_h1"> FAQ</h1>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum, consectetur adipisicing elit. Laudantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+      <h1 class="faq__h1">FAQ</h1>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum, consectetur adipisicing elit. Laudantium sed nulla
+            iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum consectetur adipisicing elit. Ltium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum consectetur adipisicing elit. Ltium sed nulla iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum dolor sit amet, consectetuaudantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum dolor sit amet, consectetuaudantium sed nulla iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla
+            iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla
+            iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla
+            iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
-        <div class="question">
-            <div class="name">
-                <h4 class="name_h4"> Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla iste?</h4>
-                <div class="box">+</div>
-            </div>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero neque quam nostrum inventore
-                    iure itaque id harum, dolores similique, deserunt necessitatibus dignissimos ex doloremque sit et
-                    rerum, ut nam!</p>
-            </article>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
+      <div class="faq__question">
+        <div class="question__name">
+          <h4 class="name__h4">
+            Lorem ipsum dmet, consectetur adipisicing elit. dantium sed nulla
+            iste?
+          </h4>
+          <div class="name__box">+</div>
         </div>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+            vero neque quam nostrum inventore iure itaque id harum, dolores
+            similique, deserunt necessitatibus dignissimos ex doloremque sit et
+            rerum, ut nam!
+          </p>
+        </article>
+      </div>
     </section>
 
     <footer class="footer">
-        <p class="logo"> - Planet tours - </p>
-        <ul>
-            <li><a href="#">Cookies policy</a></li>
-            <li><a href="#">User Agreements</a></li>
-        </ul>
-        <p class="developedBy"> Developed by Paweł Leszko || &copy PL 2019</p>
+      <p class="footer__logo">- Aloha tours -</p>
+      <ul class="footer__list">
+        <li class="footerList__item">
+          <a class="item__footerLink" href="#">Cookies policy</a>
+        </li>
+        <li class="footerList__item">
+          <a class="item__footerLink" href="#">User Agreements</a>
+        </li>
+      </ul>
+      <p class="developedBy">Developed by Paweł Leszko || &copy PL 2019</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
-
-</body>
-
+  </body>
 </html>

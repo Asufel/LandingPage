@@ -1,28 +1,28 @@
 // Burger
-$("div.burger").on("click", function() {
-  const $Nav = $(".navigation");
+$(".header__burger").on("click", function() {
+  const $Nav = $(".header__navigation");
   $Nav.toggleClass("active");
 
-  const $span1 = $("div.burger span:nth-of-type(1)");
+  const $span1 = $(".burger__span:nth-of-type(1)");
   $span1.toggleClass("move");
-  const $span3 = $("div.burger span:nth-of-type(3)");
+  const $span3 = $(".burger__span:nth-of-type(3)");
   $span3.toggleClass("move");
-  const $span2 = $("div.burger>span:nth-of-type(2)");
+  const $span2 = $(".burger__span:nth-of-type(2)");
   $span2.toggleClass("dissappear");
 
-  $("div.burger").toggleClass("active");
+  $(".header__burger").toggleClass("active");
 });
 
 $(window).on("scroll", function() {
   const windowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
 
-  const $burger = $("div.burger span");
-  const $header = $("header");
+  const $burger = $(".burger__span");
+  const $header = $(".header");
   const headerHeight = $header.outerHeight();
 
   // change burger color
-  if ($("div.theme").hasClass("active")) {
+  if ($(".header__theme").hasClass("active")) {
     if (scrollValue > headerHeight) {
       $burger.css("background-color", "white");
     } else if (scrollValue < headerHeight) {
@@ -45,20 +45,20 @@ $(window).on("scroll", function() {
     $section1.removeClass("active");
   }
 
-  const $Opinion = $(".details_h1");
+  const $Opinion = $(".details__h1");
   const OpinionFromTop = $Opinion.offset().top;
   const OpinionHeight = $Opinion.outerHeight();
-  const $offer = $("div.offer_intro");
+  const $offer = $(".details__intro");
 
   if (scrollValue > OpinionFromTop + OpinionHeight - windowHeight + 200) {
     $offer.addClass("active");
   }
 
-  const $destinations = $(".destinations_h1");
+  const $destinations = $(".destinations__h1");
   const DestinationFromTop = $destinations.offset().top;
   const DestinationHeight = $destinations.outerHeight();
 
-  const $arrowUp = $(".arrowUp");
+  const $arrowUp = $(".header__arrowUp");
 
   if (scrollValue > 2000) {
     $arrowUp.addClass("active");
@@ -67,10 +67,10 @@ $(window).on("scroll", function() {
     $arrowUp.removeClass("active");
   }
 
-  const $destination1 = $(".destinations>div.destination:nth-of-type(1)");
-  const $destination2 = $(".destinations>div.destination:nth-of-type(2)");
-  const $destination3 = $(".destinations>div.destination:nth-of-type(3)");
-  const $destination4 = $(".destinations>div.destination:nth-of-type(4)");
+  const $destination1 = $(".destinations__destination:nth-of-type(1)");
+  const $destination2 = $(".destinations__destination:nth-of-type(2)");
+  const $destination3 = $(".destinations__destination:nth-of-type(3)");
+  const $destination4 = $(".destinations__destination:nth-of-type(4)");
 
   const dests = [$destination1, $destination2, $destination3, $destination4];
 
@@ -90,15 +90,15 @@ $(window).on("scroll", function() {
 
 /* FAQ */
 
-$(".question").on("click", function() {
-  if ($(".box", this).text() === "+") {
-    $(".name", this).addClass("open");
-    $("div.open + article", this).slideDown();
-    $(".box", this).text("-");
-  } else if ($(".box", this).text() === "-") {
-    $(".name", this).removeClass("open");
+$(".faq__question").on("click", function() {
+  if ($(".name__box", this).text() === "+") {
+    $(".name__box", this).addClass("open");
+    $("article", this).slideDown();
+    $(".name__box", this).text("-");
+  } else if ($(".name__box", this).text() === "-") {
+    $(".name__box", this).removeClass("open");
     $("article", this).slideUp();
-    $(".box", this).text("+");
+    $(".name__box", this).text("+");
   }
 });
 
@@ -113,6 +113,16 @@ $(".About").on("click", function(e) {
     1000
   );
 });
+$(".header__button").on("click", function(e) {
+  e.preventDefault();
+  $("html").animate(
+    {
+      scrollTop: $(".details").offset().top
+    },
+    1000
+  );
+});
+
 $(".Tours").on("click", function(e) {
   e.preventDefault();
   $("html").animate(
@@ -135,7 +145,7 @@ $(".Contact").on("click", function(e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".socials").offset().top
+      scrollTop: $(".location__socials").offset().top
     },
     1750
   );
@@ -149,11 +159,11 @@ $(".FAQ").on("click", function(e) {
     2000
   );
 });
-$(".arrowUp").on("click", function(e) {
+$(".header__arrowUp").on("click", function(e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $("header").offset().top
+      scrollTop: $(".header").offset().top
     },
     2000
   );
@@ -161,20 +171,20 @@ $(".arrowUp").on("click", function(e) {
 
 /* Dark theme */
 
-const ThemeButton = document.querySelector("div.theme");
-const introArticle = document.querySelector(".intro_article");
-const introH2 = document.querySelector(".intro_h2");
-const faqH1 = document.querySelector(".faq_h1");
-const DestinationsH1 = document.querySelector(".destinations_h1");
-const DetailsH1 = document.querySelector(".details_h1");
-const footer = document.querySelector("footer");
-const introP = document.querySelector(".intro_p");
-const navigation = document.querySelector(".navigation");
-const arrowUp = document.querySelector("div.arrowUp");
+const ThemeButton = document.querySelector(".header__theme");
+const introArticle = document.querySelector(".intro__article");
+const introH2 = document.querySelector(".article__h2");
+const faqH1 = document.querySelector(".faq__h1");
+const DestinationsH1 = document.querySelector(".destinations__h1");
+const DetailsH1 = document.querySelector(".details__h1");
+const footer = document.querySelector(".footer");
+const introP = document.querySelector(".article__p");
+const navigation = document.querySelector(".header__navigation");
+const arrowUp = document.querySelector(".header__arrowUp");
 const faqBorder = [...document.querySelectorAll(".name_h4")];
-const burger = [...document.querySelectorAll(".burger span")];
-const divBox = [...document.querySelectorAll("div.box")];
-const socials = [...document.querySelectorAll(".social")];
+const burger = [...document.querySelectorAll(".burger__span")];
+const divBox = [...document.querySelectorAll(".name__box")];
+const socials = [...document.querySelectorAll(".obj__social")];
 const socialI = [...document.querySelectorAll(".social-icon")];
 const Elements = [introArticle, introH2, introP, DestinationsH1, DetailsH1];
 const BorderElem = [footer, faqH1, DestinationsH1, DetailsH1, navigation];
@@ -210,8 +220,8 @@ const SlideList = [
   }
 ];
 
-const IMG = document.querySelector("header>img");
-const Dots = [...document.querySelectorAll(".dots span")];
+const IMG = document.querySelector(".header__img");
+const Dots = [...document.querySelectorAll(".dots__span")];
 
 const time = 4000;
 let active = 0;
