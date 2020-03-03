@@ -1,4 +1,4 @@
-// Burger
+// Burger with jQuery
 $(".header__burger").on("click", function() {
   const $Nav = $(".header__navigation");
   $Nav.toggleClass("active");
@@ -12,7 +12,19 @@ $(".header__burger").on("click", function() {
 
   $(".header__burger").toggleClass("active");
 });
+// Add pics to section with JS
+const PICSHolders = [...document.querySelectorAll(".destination__pic")];
+const PICS = [
+  { img: "./img/cuba.jpg" },
+  { img: "./img/norway.jpg" },
+  { img: "./img/usa.jpg" },
+  { img: "./img/india.jpg" }
+];
+for (let i = 0; i < PICSHolders.length; i++) {
+  PICSHolders[i].style.backgroundImage = `url(${PICS[i].img})`;
+}
 
+// Scroll with jQuery
 $(window).on("scroll", function() {
   const windowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
@@ -88,7 +100,7 @@ $(window).on("scroll", function() {
   }
 });
 
-/* FAQ */
+/* FAQ with jQuery */
 
 $(".faq__question").on("click", function() {
   if ($(".name__box", this).text() === "+") {
@@ -102,7 +114,7 @@ $(".faq__question").on("click", function() {
   }
 });
 
-/* Scroll buttons*/
+/* Scroll buttons with jQuery*/
 
 $(".About").on("click", function(e) {
   e.preventDefault();
@@ -201,22 +213,22 @@ ThemeButton.addEventListener("click", function() {
   socialI.forEach(social => social.classList.toggle("black"));
 });
 
-/* Baner */
+/* Baner with JS */
 const SlideList = [
   {
-    img: "venice.jpg"
+    img: "./img/venice.jpg"
   },
   {
-    img: "baner1.jpg"
+    img: "./img/baner1.jpg"
   },
   {
-    img: "baner2.jpg"
+    img: "./img/baner2.jpg"
   },
   {
-    img: "baner3.jpg"
+    img: "./img/baner3.jpg"
   },
   {
-    img: "baner4.jpg"
+    img: "./img/baner4.jpg"
   }
 ];
 
