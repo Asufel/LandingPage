@@ -221,6 +221,9 @@
 
 .burger__span:nth-of-type(2) {
   top: calc(50% - 2px);
+  width: 20%;
+  left: 50%;
+  transform: translateX(50%);
   transition: 0.5s linear;
 }
 
