@@ -1,5 +1,5 @@
 // Burger with jQuery
-$(".header__burger").on("click", function() {
+$(".header__burger").on("click", function () {
   const $Nav = $(".header__navigation");
   $Nav.toggleClass("active");
 
@@ -18,14 +18,14 @@ const PICS = [
   { img: "./img/cuba.jpg" },
   { img: "./img/norway.jpg" },
   { img: "./img/usa.jpg" },
-  { img: "./img/india.jpg" }
+  { img: "./img/india.jpg" },
 ];
 for (let i = 0; i < PICSHolders.length; i++) {
   PICSHolders[i].style.backgroundImage = `url(${PICS[i].img})`;
 }
 
 // Scroll with jQuery
-$(window).on("scroll", function() {
+$(window).on("scroll", function () {
   const windowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
 
@@ -102,7 +102,7 @@ $(window).on("scroll", function() {
 
 /* FAQ with jQuery */
 
-$(".faq__question").on("click", function() {
+$(".faq__question").on("click", function () {
   if ($(".name__box", this).text() === "+") {
     $(".name__box", this).addClass("open");
     $("article", this).slideDown();
@@ -116,66 +116,66 @@ $(".faq__question").on("click", function() {
 
 /* Scroll buttons with jQuery*/
 
-$(".About").on("click", function(e) {
+$(".About").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".intro").offset().top
+      scrollTop: $(".intro").offset().top,
     },
     1000
   );
 });
-$(".header__button").on("click", function(e) {
+$(".header__button").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".details").offset().top
+      scrollTop: $(".details").offset().top,
     },
     1000
   );
 });
 
-$(".Tours").on("click", function(e) {
+$(".Tours").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".destinations").offset().top
+      scrollTop: $(".destinations").offset().top,
     },
     1250
   );
 });
-$(".News").on("click", function(e) {
+$(".News").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".details").offset().top
+      scrollTop: $(".details").offset().top,
     },
     1500
   );
 });
-$(".Contact").on("click", function(e) {
+$(".Contact").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".location__socials").offset().top
+      scrollTop: $(".location__socials").offset().top,
     },
     1750
   );
 });
-$(".FAQ").on("click", function(e) {
+$(".FAQ").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".faq").offset().top
+      scrollTop: $(".faq").offset().top,
     },
     2000
   );
 });
-$(".header__arrowUp").on("click", function(e) {
+$(".header__arrowUp").on("click", function (e) {
   e.preventDefault();
   $("html").animate(
     {
-      scrollTop: $(".header").offset().top
+      scrollTop: $(".header").offset().top,
     },
     2000
   );
@@ -201,35 +201,35 @@ const socialI = [...document.querySelectorAll(".social-icon")];
 const Elements = [introArticle, introH2, introP, DestinationsH1, DetailsH1];
 const BorderElem = [footer, faqH1, DestinationsH1, DetailsH1, navigation];
 
-ThemeButton.addEventListener("click", function() {
+ThemeButton.addEventListener("click", function () {
   ThemeButton.classList.toggle("active");
   document.body.classList.toggle("black");
   arrowUp.classList.toggle("border");
-  faqBorder.forEach(element => element.classList.toggle("border"));
-  Elements.forEach(element => element.classList.toggle("black"));
-  BorderElem.forEach(element => element.classList.toggle("border"));
-  divBox.forEach(box => box.classList.toggle("black"));
-  socials.forEach(social => social.classList.toggle("black"));
-  socialI.forEach(social => social.classList.toggle("black"));
+  faqBorder.forEach((element) => element.classList.toggle("border"));
+  Elements.forEach((element) => element.classList.toggle("black"));
+  BorderElem.forEach((element) => element.classList.toggle("border"));
+  divBox.forEach((box) => box.classList.toggle("black"));
+  socials.forEach((social) => social.classList.toggle("black"));
+  socialI.forEach((social) => social.classList.toggle("black"));
 });
 
 /* Baner with JS */
 const SlideList = [
   {
-    img: "./img/venice.jpg"
+    img: "./img/venice.jpg",
   },
   {
-    img: "./img/baner1.jpg"
+    img: "./img/baner1.jpg",
   },
   {
-    img: "./img/baner2.jpg"
+    img: "./img/baner2.jpg",
   },
   {
-    img: "./img/baner3.jpg"
+    img: "./img/baner3.jpg",
   },
   {
-    img: "./img/baner4.jpg"
-  }
+    img: "./img/baner4.jpg",
+  },
 ];
 
 const IMG = document.querySelector(".header__img");
@@ -239,7 +239,7 @@ const time = 4000;
 let active = 0;
 
 const changeDot = () => {
-  const activeDot = Dots.findIndex(dot => dot.classList.contains("active"));
+  const activeDot = Dots.findIndex((dot) => dot.classList.contains("active"));
   Dots[activeDot].classList.remove("active");
   Dots[active].classList.add("active");
 };
@@ -254,7 +254,7 @@ const changeSlide = () => {
 };
 let Baner = setInterval(changeSlide, time);
 
-const keyChange = e => {
+const keyChange = (e) => {
   clearInterval(Baner);
   if (e.keyCode === 37 || e.keyCode === 39) {
     e.keyCode === 37 ? active-- : active++;
